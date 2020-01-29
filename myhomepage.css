@@ -1,124 +1,75 @@
-.g_navi{
-  position: -webkit-sticky; /* Safari */
-  position: fixed;
-  top: 0;
-  width: 100%;
-	max-width: 960px;
-    border-radius:4px;
-}
-/*メニューバーの装飾*/
-.g_navi ul.categories{
-	margin: 0px;
-	padding: 0px 0px 0px 15px;
-  background-color: #000000;
-}
+body {
+  margin: 0 0 0 0; }
 
-/*メインメニューの装飾*/
-.g_navi ul.categories li{
-	position: relative;
-	width: 125px;
-	display: inline-block;
-  list-style-type: none;
-}
-.g_navi ul.categories a {
-		color: white;
-    background-color: #000000;
-    font-weight: bold;
+a {
+  text-decoration: none; }
+
+header {
+  height: auto;
+  width: 100%; }
+
+.header_first {
+  position: relative; }
+
+div.menu_top, div.onphoto {
+  position: absolute; }
+
+div.menu_top {
+    background-color: #2a7231;
+    width: 100%;
     display: block;
-    line-height: 40px;
-    text-align: center;
-    text-decoration: none;
-
-	}
-  .g_navi ul.categories a:hover {
-background-color: #ffdddd
-color:#dd0000
-  }
-	.g_navi ul.categories ul{
-	 	display:none;
-    margin: 0px;
-    padding: 0px;
-    position: absolute;
-		}
-.g_navi ul.categories li:hover ul{
-  display: block;
+    position: fixed;
+    opacity: 0.8;
+    z-index: 30;
+    box-shadow: 0px 7px 10px #2a7231;
 }
 
-body{
- margin:0;
- font-family: "Hiragino Kaku Gothic ProN";
+ul.menu_bar {
+  text-align: center;
+  margin: 0px;
+  justify-content: center;
+  z-index: 1; }
+  ul.menu_bar li {
+    background-color: #2a7231;
+    display: inline-block;
+    justify-content: center;
 }
 
-a{
-  text-decoration: none;
+a.btn1 {
+  padding: 5px 10px;
+  color: #c70ef5;
+  font-size: 35px;
+  font-weight: bold;
+  display: table-cell;
+  vertical-align: bottom;
+  border-radius: 16px;
+  border-style: ridge;
+  -webkit-text-stroke-color: white;
+  -webkit-text-stroke-width: 2px;
 }
+  a.btn1:hover {
+    background-color: #8b26a4;
+color: #2e8509;
+text-shadow: 1px 1px 6px #2c8d2c;
+    }
 
-.container{
-  width:1170px;
-  padding: 0 15px;
-  margin: 0 auto;
-}
+.menu-icon {
+  color: white;
+  float: right;
+  font-size: 25px;
+  padding: 21px 0;
+  display: none; }
 
-.top-wrapper h2{
-  font-family:serif;
-  font-size:60px;
-  color:rgba(0,0,0,.0);
-  text-align:center;
-   -webkit-text-stroke: 2px #FFF;
-}
-
-.top-wrapper h1{
-    font-family:serif;
-    font-size:90px;
-    color:rgba(0,0,0,.0);
-    text-align:center;
-    padding: 20px 0;
-     -webkit-text-stroke: 4px #FFF;
-  }
-
-.container p{
-  font-size: 40px;
-}
-.top-wrapper{
+div.onphoto {
   padding: 200px 0 400px;
   background-image: url("https://agachan.github.io/agachan_homepage/top.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width:100%;
+  width: 100%;
   height: 300px;
   color: white;
-
-}
-
-}
-
-.top-warapper h1{
-  opacity: 0.7;
-  font-size: 45px;
-  letter-spacing:5px;
-}
-
-.top-warapper p{
-  opacity: 0.7;
-}
-
-.btn{
-  padding: 10px 20px;
-  color: white;
-  display: inline-block;
-  opacity: 0.8;
-  border-radius:8px;
-  font-size: 20px;
-}
-
-.Instagram{
-  background-color: #c71585;
-}
-
-.facebook{
-  background-color: #3b5998;
-}
+  z-index: 0; }
 
 .Twitter{
   background-color: #55acee;
